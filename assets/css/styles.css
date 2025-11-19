@@ -16838,4 +16838,157 @@ ul {
 .btn-dark:hover {
   color: var(--bs-dark);
   background-color: var(--bs-white);
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/* Banner Subtitle Custom Font */
+.banner-subtitle {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* About Service Card Styles */
+.about-service-card {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.about-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-service-card.bg-dark:hover {
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+.about-service-card.bg-light h3 {
+  color: #212529 !important;
+}
+
+.about-service-card.bg-light span {
+  color: #212529 !important;
+}
+
+.about-service-card.bg-light li {
+  color: #212529 !important;
+}
+
+.about-service-card.bg-dark h3 {
+  color: #ffffff !important;
+}
+
+.about-service-card.bg-dark span {
+  color: #ffffff !important;
+}
+
+.about-service-card.bg-dark li {
+  color: #ffffff !important;
+}
+
+/* Project Card Styles */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.project-card::before {
+  content: '';
+  display: block;
+  padding-top: 75%;
+}
+.project-card > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.project-card .project-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.project-card:hover > img {
+  transform: scale(1.1);
+}
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.service-preview-card {
+  transition: all 0.3s ease;
+  display: block;
+}
+.service-preview-card > div {
+  transition: all 0.3s ease;
+}
+.service-preview-card:hover {
+  transform: translateY(-8px);
+}
+.service-preview-card:hover .round-80 {
+  transform: scale(1.1);
+  background-color: rgba(193, 255, 114, 0.2) !important;
+}
+.service-preview-card:hover h4,
+.service-preview-card:hover p {
+  color: #fff !important;
+}
+
+.artist-card {
+  transition: all 0.3s ease;
+}
+.artist-card:hover {
+  transform: translateY(-5px);
+}
+.artist-card:hover .artist-image img {
+  transform: scale(1.05);
+}
+.artist-card .artist-image {
+  overflow: hidden;
+}
+.artist-card .artist-image img {
+  transition: transform 0.3s ease;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.service-card {
+  transition: all 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+.service-card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.service-card img {
+  transition: transform 0.3s ease;
+}
+
+.project-card-modal {
+  cursor: pointer;
+}
+
+.project-featured-card {
+  transition: all 0.3s ease;
+}
+.project-featured-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.project-featured-card img {
+  transition: transform 0.3s ease;
+}
+.project-featured-card:hover img {
+  transform: scale(1.05);
+}
+
+/*# sourceMappingURL=styles.css.map */
